@@ -30,7 +30,7 @@ float xEye = 0.0f, yEye = 5.0f, zEye = 30.0f;
 float cenX = 0, cenY = 0, cenZ = 0, roll = 0;
 float radius = 0;
 float theta = 0, slope = 0;
-float speed = 0.3;
+float speed = 0.075;
 float angleBackFrac = 0.2;
 bool saheedMinarVisible = false;
 float r[] = { 0.8,0.4,0.0,0.7,0.9,0.5,0.0,0.7,0.5,0.0 };
