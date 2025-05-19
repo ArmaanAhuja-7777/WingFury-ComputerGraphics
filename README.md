@@ -1,6 +1,6 @@
-# ✈️ 3D Airplane Game in OpenGL
+# ✈️ WingFury - A skyway challenge
 
-A stunning 3D airplane game built using **OpenGL**, **GLUT**, and **Assimp**. Navigate your aircraft through rings, dodge buildings, and explore a dynamically animated environment!
+A stunning 3D airplane game built using **OpenGL**, **FreeGLUT**. Navigate your aircraft through rings, dodge buildings, and explore a dynamically animated environment!
 
 ![screenshot](screenshots/screenshot2.jpg)
 

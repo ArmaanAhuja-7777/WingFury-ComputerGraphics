@@ -914,7 +914,7 @@ static void display(void) {
 
     if (!rot) a = 0;
     if (START) {
-        glClearColor(0.0f, 0.0f, 0.0f, 0.0f); // White background during game
+        glClearColor(1.0f, 1.0f, 1.0f, 1.0f); // White background during game
     }
     else {
         glClearColor(0.96f, 0.87f, 0.70f, 1.0f);
