@@ -965,10 +965,10 @@ static void display(void) {
          
         drawStrokeText2("WingFury-A skyway challenge", -5, 0, 0);
         
-        drawStrokeText("Aarav Rana 102203372", -2, -2, 0);
+        drawStrokeText("Aarav Rana 102203378", -2, -2, 0);
 
         drawStrokeText("Gauransh Mehra 102203322", -2, -3, 0);
-        drawStrokeText("Armaan Ahuja 102203379", -2, -4, 0);
+        drawStrokeText("Armaan Ahuja 102203372", -2, -4, 0);
     }
 
     glutSwapBuffers();
