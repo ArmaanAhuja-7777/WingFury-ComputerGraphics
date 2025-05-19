@@ -3,7 +3,7 @@
 #ifndef RGBPIXMAP_H
 #define RGBPIXMAP_H
 
-#include <GL/glut.h>
+#include <GL/freeglut.h>
 #include <fstream>
 
 // Type aliases

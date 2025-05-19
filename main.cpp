@@ -52,7 +52,7 @@ static void resize(int width, int height) {
     glLoadIdentity();
 }
 
-void drawShohidMinar() {
+void drawBuildingOne() {
     glColor3d(0.95, 0.95, 0.95);
     glPushMatrix();
     glTranslated(0, 1.55, 0);
@@ -685,7 +685,7 @@ void plane() {
     glPopMatrix();
 }
 
-void singleTolaHouse(int R, int G, int B) {
+void singleHouse(int R, int G, int B) {
     glColor3d(r[R % 11] * 0.8, g[G % 11] * 0.8, b[B % 11] * 0.8);
     glPushMatrix();
     glTranslated(0, 0, 0);
@@ -722,12 +722,12 @@ void house(int n, int R, int G) {
     for (int i = 0; i < n; i++) {
         glPushMatrix();
         glTranslated(0, 0.8 + i, 0);
-        singleTolaHouse(G, R, i);
+        singleHouse(G, R, i);
         glPopMatrix();
     }
 }
 
-void soheedMinarEnv() {
+void buildingOneEnv() {
     glColor3d(0.95, 0.95, 0.95);
     glPushMatrix();
     glTranslated(0, 0, 0);
@@ -739,14 +739,14 @@ void soheedMinarEnv() {
     glTranslated(-8, -2.7, -5);
     glRotated(65, 0, 1, 0);
     glScaled(2, 2, 2);
-    drawShohidMinar();
+    drawBuildingOne();
     glPopMatrix();
 
     glPushMatrix();
     glTranslated(8, -2.7, -5);
     glRotated(-65, 0, 1, 0);
     glScaled(2, 2, 2);
-    drawShohidMinar();
+    drawBuildingOne();
     glPopMatrix();
 }
 
@@ -813,7 +813,7 @@ void draw() {
 
     glPushMatrix();
     glTranslated(tX, tY, tZ1);
-    soheedMinarEnv();
+    buildingOneEnv();
     glPopMatrix();
 
     glPushMatrix();
@@ -950,8 +950,11 @@ static void display(void) {
         plane();
         glPopMatrix();
 
-        drawStrokeText("Press G to Start", -1, -1, 0);
-        drawStrokeText2("Plane Game", -2, 0, 0);
+        drawStrokeText("Press G to Start", -2, -1, 0);
+        drawStrokeText2("WingFury-A skyway challenge", -5, 0, 0);
+        drawStrokeText("Aarav Rana 102203372", -2, -2, 0);
+        drawStrokeText("Gauransh Mehra 102203322", -2, -3, 0);
+        drawStrokeText("Armaan Ahuja 102203379", -2, -4, 0);
     }
 
     glutSwapBuffers();
@@ -1022,7 +1025,7 @@ int main(int argc, char* argv[]) {
     glutInitWindowPosition(0, 0);
     glutInitWindowSize(1366, 720);
     glutInitDisplayMode(GLUT_RGB | GLUT_DOUBLE | GLUT_DEPTH | GLUT_RGBA);
-    glutCreateWindow("Plane Game");
+    glutCreateWindow("WingFury");
     glutReshapeFunc(resize);
     glutDisplayFunc(display);
     glutKeyboardFunc(key);
