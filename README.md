@@ -2,7 +2,7 @@
 
 A stunning 3D airplane game built using **OpenGL**, **FreeGLUT**. Navigate your aircraft through rings, dodge buildings, and explore a dynamically animated environment!
 
-![screenshot](screenshots/screenshot2.jpg)
+![screenshot](screenshots/screenshot3.jpg)
 
 ---
 
@@ -44,6 +44,6 @@ A stunning 3D airplane game built using **OpenGL**, **FreeGLUT**. Navigate your 
 
 <p align="center">
   <img src="screenshots/screenshot1.jpg" width="400"/>
-  <img src="screenshots/screenshot2.jpg" width="400"/>
+  <img src="screenshots/screenshot3.jpg" width="400"/>
 </p>
 
