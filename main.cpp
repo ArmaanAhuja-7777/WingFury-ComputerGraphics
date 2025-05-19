@@ -751,7 +751,8 @@ void buildingOneEnv() {
 }
 
 void environment(int n) {
-    glColor3d(0.1, 0.6, 0.2);
+    glColor3f(0.96f, 0.87f, 0.70f);
+
     glPushMatrix();
     glTranslated(0, 0, 0);
     glScaled(EN_SIZE * 2, 0.3, EN_SIZE * 2);
@@ -912,6 +913,15 @@ static void display(void) {
     double aa = a;
 
     if (!rot) a = 0;
+    if (START) {
+        glClearColor(0.0f, 0.0f, 0.0f, 0.0f); // White background during game
+    }
+    else {
+        glClearColor(0.96f, 0.87f, 0.70f, 1.0f);
+
+        // Blue background for initial menu
+    }
+
 
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     glLoadIdentity();
@@ -943,16 +953,20 @@ static void display(void) {
         }
     }
     else {
+         
         glPushMatrix();
         glTranslated(0, 3, 0);
         glRotated(aa, 0, 1, 0);
         glScaled(1.5, 1.5, 1.5);
         plane();
         glPopMatrix();
-
+         
         drawStrokeText("Press G to Start", -2, -1, 0);
+         
         drawStrokeText2("WingFury-A skyway challenge", -5, 0, 0);
+        
         drawStrokeText("Aarav Rana 102203372", -2, -2, 0);
+
         drawStrokeText("Gauransh Mehra 102203322", -2, -3, 0);
         drawStrokeText("Armaan Ahuja 102203379", -2, -4, 0);
     }
